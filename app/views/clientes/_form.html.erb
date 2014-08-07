@@ -1,0 +1,15 @@
+<%= simple_form_for(@cliente) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :user %>
+    <%= f.input :nombre %>
+    <%= f.input :apellido %>
+    <%= f.input :email %>
+    <%= f.input :otros_datos %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
