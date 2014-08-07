@@ -1,4 +1,3 @@
-require 'pry'
 class TrabajosController < ApplicationController
   before_action :set_trabajo, only: [:show, :edit, :update, :destroy]
   before_action :set_cliente, only: [:index, :show, :create, :update, :destroy]
