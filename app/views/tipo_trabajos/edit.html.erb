@@ -1,6 +1,5 @@
-<h1>Editing tipo_trabajo</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @tipo_trabajo %> |
-<%= link_to 'Back', tipo_trabajos_path %>
+<%- model_class = TipoTrabajo -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => TipoTrabajo %></h1>
+</div>
+<%= render :partial => 'form' %>
