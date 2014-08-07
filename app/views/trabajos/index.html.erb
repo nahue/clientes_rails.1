@@ -22,11 +22,11 @@
         <td><%= trabajo.valor %></td>
         <td><%=l trabajo.created_at, format: :long %></td>
         <td>
-          <%= link_to trabajo_path(trabajo), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.show')) }" do %>
+          <%= link_to cliente_trabajo_path(@cliente, trabajo), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.show')) }" do %>
             <%= glyph 'info-sign' %>
             <%= glyph 'pencil' %>
           <%- end -%>
-          <%= link_to trabajo_path(trabajo), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
+          <%= link_to cliente_trabajo_path(@cliente, trabajo), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
             <%= glyph 'remove' %>
           <%- end -%>
         </td>
@@ -36,5 +36,5 @@
 </table>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
-            new_trabajo_path,
+            new_cliente_trabajo_path,
             :class => 'btn btn-primary' %>

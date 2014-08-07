@@ -1,14 +1,14 @@
 class ClientesController < ApplicationController
 
   #->Prelang (scaffolding:rails/scope_to_user)
-  before_filter :require_user_signed_in, only: [:new, :edit, :create, :update, :destroy]
+  before_filter :require_user_signed_in, only: [:index, :new, :edit, :create, :update, :destroy]
 
   before_action :set_cliente, only: [:show, :edit, :update, :destroy]
 
   # GET /clientes
   # GET /clientes.json
   def index
-    @clientes = Cliente.all
+    @clientes = Cliente.where('user_id = ?', current_user.id)
   end
 
   # GET /clientes/1
@@ -33,7 +33,7 @@ class ClientesController < ApplicationController
 
     respond_to do |format|
       if @cliente.save
-        format.html { redirect_to @cliente, notice: 'Cliente was successfully created.' }
+        format.html { redirect_to clientes_path, notice: 'Cliente was successfully created.' }
         format.json { render :show, status: :created, location: @cliente }
       else
         format.html { render :new }

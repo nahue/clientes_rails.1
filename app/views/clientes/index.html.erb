@@ -28,6 +28,7 @@
             <%= glyph 'info-sign' %>
             <%= glyph 'pencil' %>
           <%- end -%>
+          <%= link_to 'Trabajos', cliente_trabajos_path(cliente) %>
           <%= link_to cliente_path(cliente), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
             <%= glyph 'remove' %>
           <%- end -%>
