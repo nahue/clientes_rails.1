@@ -1,33 +1,40 @@
-<h1>Listing trabajos</h1>
-
-<table>
+<%- model_class = Trabajo -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => Trabajo %></h1>
+</div>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Cliente</th>
-      <th>Descripcion</th>
-      <th>Tipo trabajo</th>
-      <th>Fecha</th>
-      <th>Valor</th>
-      <th colspan="3"></th>
+      <th>ID</th>
+      <th><%= model_class.human_attribute_name(:descripcion) %></th>
+      <th><%= model_class.human_attribute_name(:fecha) %></th>
+      <th><%= model_class.human_attribute_name(:valor) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
-
   <tbody>
     <% @trabajos.each do |trabajo| %>
       <tr>
-        <td><%= trabajo.cliente %></td>
+        <td><%= trabajo.id %></td>
         <td><%= trabajo.descripcion %></td>
-        <td><%= trabajo.tipo_trabajo %></td>
         <td><%= trabajo.fecha %></td>
         <td><%= trabajo.valor %></td>
-        <td><%= link_to 'Show', trabajo %></td>
-        <td><%= link_to 'Edit', edit_trabajo_path(trabajo) %></td>
-        <td><%= link_to 'Destroy', trabajo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%=l trabajo.created_at, format: :long %></td>
+        <td>
+          <%= link_to trabajo_path(trabajo), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.show')) }" do %>
+            <%= glyph 'info-sign' %>
+            <%= glyph 'pencil' %>
+          <%- end -%>
+          <%= link_to trabajo_path(trabajo), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
+            <%= glyph 'remove' %>
+          <%- end -%>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Trabajo', new_trabajo_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_trabajo_path,
+            :class => 'btn btn-primary' %>

@@ -1,29 +1,28 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Trabajo -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => Trabajo %></h1>
+</div>
 
-<p>
-  <strong>Cliente:</strong>
-  <%= @trabajo.cliente %>
-</p>
+<div class="fieldset">
+  <dl>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:descripcion) %></dt>
+      <dd><pre class="prettyprint"><%= @trabajo.descripcion %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:fecha) %></dt>
+      <dd><pre class="prettyprint"><%= @trabajo.fecha %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:valor) %></dt>
+      <dd><pre class="prettyprint"><%= @trabajo.valor %></pre></dd>
+  </dl>
+</div>
 
-<p>
-  <strong>Descripcion:</strong>
-  <%= @trabajo.descripcion %>
-</p>
+<div class="form-group">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              trabajos_path, :class => 'btn btn-default'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_trabajo_path(@trabajo), :class => 'btn btn-default' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              trabajo_path(@trabajo),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
 
-<p>
-  <strong>Tipo trabajo:</strong>
-  <%= @trabajo.tipo_trabajo %>
-</p>
-
-<p>
-  <strong>Fecha:</strong>
-  <%= @trabajo.fecha %>
-</p>
-
-<p>
-  <strong>Valor:</strong>
-  <%= @trabajo.valor %>
-</p>
-
-<%= link_to 'Edit', edit_trabajo_path(@trabajo) %> |
-<%= link_to 'Back', trabajos_path %>

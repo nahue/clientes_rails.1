@@ -1,6 +1,5 @@
-<h1>Editing trabajo</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @trabajo %> |
-<%= link_to 'Back', trabajos_path %>
+<%- model_class = Trabajo -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Trabajo %></h1>
+</div>
+<%= render :partial => 'form' %>
