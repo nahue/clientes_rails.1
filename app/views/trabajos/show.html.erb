@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @trabajo.cliente %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @trabajo.descripcion %>
+</p>
+
+<p>
+  <strong>Tipo trabajo:</strong>
+  <%= @trabajo.tipo_trabajo %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @trabajo.fecha %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @trabajo.valor %>
+</p>
+
+<%= link_to 'Edit', edit_trabajo_path(@trabajo) %> |
+<%= link_to 'Back', trabajos_path %>
