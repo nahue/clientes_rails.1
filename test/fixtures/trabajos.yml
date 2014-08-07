@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cliente_id: 
+  descripcion: MyText
+  tipo_trabajo_id: 
+  fecha: 2014-08-07 16:08:22
+  valor: 9.99
+
+two:
+  cliente_id: 
+  descripcion: MyText
+  tipo_trabajo_id: 
+  fecha: 2014-08-07 16:08:22
+  valor: 9.99
