@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -43,13 +43,13 @@ gem 'bundler'
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
 gem 'simple_form'
-gem 'devise', github: 'plataformatec/devise'
+gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'binding_of_caller'
 gem 'rails_config'
 gem 'autoprefixer-rails'
-gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.2.0'
 gem 'bootstrap-sass-extras'
 
 group :development, :test do
@@ -62,3 +62,7 @@ group :development do
 end
 
 gem 'rails_12factor', group: :production
+gem 'capistrano', '~> 3.1.0'
+gem 'capistrano-bundler', '~> 1.1.2'
+gem 'capistrano-rails', '~> 1.1.1'
+gem 'capistrano-rbenv', '~> 2.0'

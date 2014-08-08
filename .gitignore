@@ -7,6 +7,19 @@
 # Ignore bundler config.
 /.bundle
 
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+/bin/*
+
+pickle-email-*.html
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
