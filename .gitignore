@@ -17,7 +17,6 @@ capybara-*.html
 /spec/tmp
 **.orig
 rerun.txt
-/bin/*
 
 pickle-email-*.html
 # Ignore the default SQLite database.

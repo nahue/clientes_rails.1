@@ -12,7 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+gem 'therubyracer',  platforms: :ruby
 gem 'rails-i18n'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -43,7 +43,7 @@ gem 'bundler'
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
 gem 'simple_form'
-gem 'devise'
+gem 'devise', github: 'plataformatec/devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'binding_of_caller'
