@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
 
   resources :clientes do
+    #resources :trabajos, only: [:new,:index, :show, :edit, :update]
+    #resource :trabajos, only: [ :create]
     resources :trabajos
   end
 

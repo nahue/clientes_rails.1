@@ -1,6 +1,6 @@
 class TrabajosController < ApplicationController
   before_action :set_trabajo, only: [:show, :edit, :update, :destroy]
-  before_action :set_cliente, only: [:index, :show, :create, :update, :destroy]
+  before_action :set_cliente, only: [:new, :edit, :index, :show, :create, :update, :destroy]
   # GET /trabajos
   # GET /trabajos.json
   def index
