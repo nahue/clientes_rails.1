@@ -22,7 +22,7 @@
         <td><%= trabajo.valor %></td>
         <td><%=l trabajo.created_at, format: :long %></td>
         <td>
-          <%= link_to cliente_trabajo_path(@cliente, trabajo), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.show')) }" do %>
+          <%= link_to cliente_trabajo_path(@cliente, trabajo), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.edit')) }" do %>
             <%= glyph 'info-sign' %>
             <%= glyph 'pencil' %>
           <%- end -%>

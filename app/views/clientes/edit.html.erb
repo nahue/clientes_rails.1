@@ -1,5 +1,19 @@
 <%- model_class = Cliente -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Cliente %></h1>
+<header>
+  <div class="row b-b m-l-none m-r-none">
+    <div class="col-sm-4">
+      <h3 class="m-t m-b-none"><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Cliente %></h3>
+      <p class="block text-muted">asdas</p>
+    </div>
+  </div>
+</header>
+<div class="vbox">
+    <div class="scrollable wrapper">
+        <section class="panel">
+            <header class="panel-heading">Ingrese los Datos </header>
+            <div class="panel-body">
+                <%= render :partial => 'form' %>
+            </div>
+        </section>
+    </div>
 </div>
-<%= render :partial => 'form' %>

@@ -1,43 +1,53 @@
 <%- model_class = Cliente -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => Cliente %></h1>
-</div>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th><%= model_class.human_attribute_name(:nombre) %></th>
-      <th><%= model_class.human_attribute_name(:apellido) %></th>
-      <th><%= model_class.human_attribute_name(:email) %></th>
-      <th><%= model_class.human_attribute_name(:otros_datos) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @clientes.each do |cliente| %>
-      <tr>
-        <td><%= cliente.id %></td>
-        <td><%= cliente.nombre %></td>
-        <td><%= cliente.apellido %></td>
-        <td><%= cliente.email %></td>
-        <td><%= cliente.otros_datos %></td>
-        <td><%=l cliente.created_at, format: :long %></td>
-        <td>
-          <%= link_to cliente_path(cliente), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.show')) }" do %>
-            <%= glyph 'info-sign' %>
-            <%= glyph 'pencil' %>
-          <%- end -%>
-          <%= link_to 'Trabajos', cliente_trabajos_path(cliente) %>
-          <%= link_to cliente_path(cliente), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
+<header>
+  <div class="row b-b m-l-none m-r-none">
+    <div class="col-sm-4">
+      <h3 class="m-t m-b-none">Clientes</h3>
+      <p class="block text-muted">Administre su clientela</p>
+    </div>
+  </div>
+</header>
+<div class="vbox">
+  <div class="scrollable wrapper">
+    <section class="panel">
+    <header class="panel-heading"> Clientes </header>
+    <div class="panel-body">
+    <table class="table table-striped b-t text-sm">
+      <thead>
+        <tr>
+          <th><%= model_class.human_attribute_name(:nombre) %></th>
+          <th><%= model_class.human_attribute_name(:apellido) %></th>
+          <th><%= model_class.human_attribute_name(:email) %></th>
+          <th class="hidden-xs"><%= model_class.human_attribute_name(:otros_datos) %></th>
+          <th><%=t '.actions', :default => t("helpers.actions") %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @clientes.each do |cliente| %>
+        <tr>
+          <td><%= cliente.nombre %></td>
+          <td><%= cliente.apellido %></td>
+          <td><%= cliente.email %></td>
+          <td class="hidden-xs"><%= cliente.otros_datos %></td>
+          <td>
+            <%= link_to edit_cliente_path(cliente), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.edit')) }" do %>
+              <%= glyph 'pencil' %>
+            <%- end -%>
+            <%= link_to 'Trabajos', cliente_trabajos_path(cliente) %>
+            <%= link_to cliente_path(cliente), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
             <%= glyph 'remove' %>
-          <%- end -%>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_cliente_path,
-            :class => 'btn btn-primary' %>
+            <%- end -%>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+    </div>
+    <footer class="panel-footer">
+      <%= link_to t('.new', :default => t("helpers.links.new")),
+      new_cliente_path,
+      :class => 'btn btn-primary' %>
+    </footer>
+  </section>
+</div>
+</div>

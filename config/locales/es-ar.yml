@@ -1,4 +1,13 @@
 'es-AR':
+  helpers:
+    actions: 'Acciones'
+    links:
+      new: 'Nuevo'
+      edit: 'Editar'
+      destroy: 'Eliminar'
+      cancel: 'Cancelar'
+    titles:
+      edit: "Editar %{model}"
   devise:
     confirmations:
       confirmed: Tu cuenta ha sido confirmada satisfactoriamente.
