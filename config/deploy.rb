@@ -10,7 +10,7 @@ set :repo_url, 'https://github.com/nahue/clientes_rails.1.git'
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/home/deploy/clientesRails'
 
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml .env}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 
