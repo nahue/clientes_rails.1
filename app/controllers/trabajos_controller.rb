@@ -30,6 +30,8 @@ class TrabajosController < ApplicationController
 
     respond_to do |format|
       if @trabajo.save
+        TrabajoMailer.detalle_trabajo(current_user, @cliente, @trabajo).deliver
+
         format.html { redirect_to cliente_trabajos_path(@cliente), notice: 'Trabajo was successfully created.' }
         format.json { render :show, status: :created, location: @trabajo }
       else
