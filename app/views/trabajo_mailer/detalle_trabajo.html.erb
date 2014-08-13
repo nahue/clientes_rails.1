@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Saludos, <%= @cliente.nombre %></h1>
+    <p>
+      Se ha generado una nueva orden de trabajo, los datos son los siguientes:
+
+      <ul>
+        <li>Descripcion: <%= @trabajo.descripcion %></li>
+        <li>Valor: <%= @trabajo.valor %></li>
+      </ul>
+    </p>
+
+    <p>Ante cualquier duda o reclame contactese a info@***REMOVED***</p>
+  </body>
+</html>
