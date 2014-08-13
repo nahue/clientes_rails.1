@@ -7,6 +7,7 @@
       destroy: 'Eliminar'
       cancel: 'Cancelar'
     titles:
+      new: 'Nuevo %{model}'
       edit: "Editar %{model}"
   devise:
     confirmations:
@@ -40,6 +41,10 @@
       updated: Se ha cambiado tu contraseña. Ya iniciaste sesión.
       updated_not_active: Tu contraseña fue cambiada.
     registrations:
+      new:
+        title: Registrarse
+        button: Registrarse
+
       destroyed: Fue grato tenerte con nosotros. Tu cuenta fue cancelada.
       signed_up: Bienvenido. Tu cuenta fue creada.
       signed_up_but_inactive: Tu cuenta ha sido creada correctamente. Sin embargo, no hemos podido iniciar la sesión porque tu cuenta aún no está activada.
@@ -48,6 +53,8 @@
       update_needs_confirmation: Has actualizado tu cuenta correctamente, pero es necesario confirmar tu nuevo correo electrónico. Por favor, comprueba tu correo y sigue el enlace de confirmación para finalizar la comprobación del nuevo correo eletrónico.
       updated: Tu cuenta se ha actualizada.
     sessions:
+      new:
+        login: Entrar
       signed_in: Sesión iniciada.
       signed_out: Sesión finalizada.
     unlocks:

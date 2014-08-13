@@ -1,0 +1,35 @@
+<div class="bg-success nav-user hidden-xs pos-flt">
+    <div class="nav-avatar post-lt">
+        <a href="#" class="thumb-sm avatar animated rollIn" data-toggle="dropdown">
+            <img src="<%= avatar_url(current_user, 28) %>" alt="" class="">
+            <span class="caret caret-white"></span>
+        </a>
+        <ul class="dropdown-menu m-t-sm animated fadeInLeft">
+            <span class="arrow top"></span>
+            <li>
+                <a href="#">Settings</a>
+            </li>
+            <li>
+                <a href="profile.html">Profile</a>
+            </li>
+            <li>
+                <a href="#"><span class="badge bg-danger pull-right">3</span> Notifications </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="docs.html">Help</a>
+            </li>
+            <% if defined?(Devise) %>
+                <% if user_signed_in? %>
+                    <li><%= link_to "Salir", destroy_user_session_path, method: :delete %></li>
+                <% end %>
+            <% end %>
+        </ul>
+        <div class="visible-xs m-t m-b"> <a href="#" class="h3">John.Smith</a> <p><i class="fa fa-map-marker"></i> London, UK</p> </div>
+    </div>
+</div>
+<nav class="nav-primary hidden-xs" role="navigation">
+    <ul class="nav">
+        <li class="active"><%= link_to "Clientes", clientes_path %></li>
+    </ul>
+</nav>

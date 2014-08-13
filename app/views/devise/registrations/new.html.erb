@@ -1,51 +1,47 @@
-<div class="page-header">
-  <h1><%=t ".title", default: "Sign Up" %></h1>
+<div class="panel-heading bg bg-primary text-center">
+  <%=t ".title", default: "Sign Up" %>
 </div>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "form-horizontal form-user"}) do |f| %>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "panel-body"}) do |f| %>
   <%= devise_error_messages! %>
 
-  
-  <div class="form-group">
-    <%= f.label :username, class: "control-label col-md-4" %>
-    <div class="col-md-8">
-      <%= f.text_field :username, class: "text-field form-control", html: {spellcheck: "false"} %>
-    </div>
-  </div>
-  
 
   <div class="form-group">
-    <%= f.label :email, class: "control-label col-md-4" %>
-    <div class="col-md-8">
+    <%= f.label :username, class: "control-label" %>
+    <%= f.text_field :username, class: "form-control", html: {spellcheck: "false"} %>
+
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :email, class: "control-label" %>
+
       <%= f.email_field :email, class: "text-field form-control", html: {spellcheck: "false"} %>
-    </div>
-  </div>
-    
-  <div class="form-group">
-    <%= f.label :password, class: "control-label col-md-4" %>
-    <div class="col-md-8">
-      <%= f.password_field :password, class: "text-field form-control", html: {autocomplete: "off"} %>
-    </div>
-  </div>
-     
-  <div class="form-group">
-    <%= f.label :password_confirmation, "Password Confirmation", class: "control-label col-md-4" %>
-    <div class="col-md-8">
-      <%= f.password_field :password_confirmation, class: "text-field form-control", html: {autocomplete: "off"} %>
-    </div>
-  </div>
-     
-  <div class="form-group">
-    <div class="col-md-offset-4 col-md-8">
-      <%= f.submit "Sign Up", class: "btn btn-primary" %>
-    </div>
+
   </div>
 
   <div class="form-group">
-    <div class="col-md-offset-4 col-md-8">
-      <%= render "devise/shared/links" %>
-    </div>
+    <%= f.label :password, class: "control-label" %>
+
+      <%= f.password_field :password, class: "text-field form-control", html: {autocomplete: "off"} %>
+
   </div>
+
+  <div class="form-group">
+    <%= f.label :password_confirmation, "Password Confirmation", class: "control-label" %>
+
+      <%= f.password_field :password_confirmation, class: "text-field form-control", html: {autocomplete: "off"} %>
+
+  </div>
+
+  <%= f.submit t(".button"), class: "btn btn-info" %>
+
+  <div class="line line-dashed"></div>
+
+  <p class="text-muted text-center"><small>Ya tiene una cuenta?</small></p>
+
+  <%= link_to t("devise.sessions.new.login"), new_session_path(resource_name), class: 'btn btn-white btn-block' %><br />
 
 <% end %>
 
