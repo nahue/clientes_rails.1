@@ -300,6 +300,7 @@ DEPENDENCIES
   capistrano-rbenv (~> 2.0)
   coffee-rails (~> 4.0.0)
   devise!
+  dotenv-deployment
   dotenv-rails
   jbuilder (~> 2.0)
   jquery-rails
