@@ -15,9 +15,10 @@
     <table class="table table-striped b-t text-sm">
       <thead>
         <tr>
+          <th><%= model_class.human_attribute_name(:empresa) %></th>
           <th><%= model_class.human_attribute_name(:nombre) %></th>
           <th><%= model_class.human_attribute_name(:apellido) %></th>
-          <th><%= model_class.human_attribute_name(:email) %></th>
+          <th class="hidden-xs"><%= model_class.human_attribute_name(:email) %></th>
           <th class="hidden-xs"><%= model_class.human_attribute_name(:otros_datos) %></th>
           <th><%=t '.actions', :default => t("helpers.actions") %></th>
         </tr>
@@ -25,9 +26,10 @@
       <tbody>
         <% @clientes.each do |cliente| %>
         <tr>
+          <td><%= cliente.empresa %></td>
           <td><%= cliente.nombre %></td>
           <td><%= cliente.apellido %></td>
-          <td><%= cliente.email %></td>
+          <td class="hidden-xs"><%= cliente.email %></td>
           <td class="hidden-xs"><%= cliente.otros_datos %></td>
           <td>
             <%= link_to edit_cliente_path(cliente), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.edit')) }" do %>

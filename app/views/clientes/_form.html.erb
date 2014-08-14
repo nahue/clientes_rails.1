@@ -1,5 +1,11 @@
 <%= form_for @cliente, :html => { :class => 'form-horizontal form-model' } do |f| %>
   <div class="form-group">
+    <%= f.label :empresa, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :empresa, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
     <%= f.label :nombre, :class => 'control-label col-md-2' %>
     <div class="col-md-10">
       <%= f.text_field :nombre, :class => 'text-field form-control' %>
@@ -15,6 +21,12 @@
     <%= f.label :email, :class => 'control-label col-md-2' %>
     <div class="col-md-10">
       <%= f.email_field :email, :class => 'text-field form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :telefono, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :telefono, :class => 'text-field form-control' %>
     </div>
   </div>
   <div class="form-group">
