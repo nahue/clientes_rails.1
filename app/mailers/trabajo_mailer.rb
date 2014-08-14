@@ -1,5 +1,5 @@
 class TrabajoMailer < ActionMailer::Base
-  default from: "nahuel.chaves@gmail.com"
+  default from: "info@nahuel-chaves.com.ar"
 
   def detalle_trabajo(usuario, cliente, trabajo)
     @cliente = cliente

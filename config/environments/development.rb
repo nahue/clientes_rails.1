@@ -20,10 +20,12 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address   => "smtp.mandrillapp.com",
-    :port      => 25,
-    :user_name => ENV["MANDRILL_USERNAME"],
-    :password  => ENV["MANDRILL_API_KEY"]
+    :authentication => :plain,
+    :address => "smtp.mailgun.org",
+    :port => 587,
+    :domain => "nahuel-chaves.com.ar",
+    :user_name => "postmaster@nahuel-chaves.com.ar",
+    :password => "Nahuelcha1986"
   }
 
   # Print deprecation notices to the Rails logger.

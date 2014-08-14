@@ -66,14 +66,14 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address   => "smtp.mandrillapp.com",
-    :port      => 25,
-    :user_name => ENV["MANDRILL_USERNAME"],
-    :password  => ENV["MANDRILL_API_KEY"],
-    :enable_starttls_auto => true, # detects and uses STARTTLS
-    :authentication => 'login', # Mandrill supports 'plain' or 'login'
-    :domain => 'nahuel-chaves.com.ar'
+    :authentication => :plain,
+    :address => "smtp.mailgun.org",
+    :port => 587,
+    :domain => "nahuel-chaves.com.ar",
+    :user_name => "postmaster@nahuel-chaves.com.ar",
+    :password => "Nahuelcha1986"
   }
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
