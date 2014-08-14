@@ -69,7 +69,10 @@ Rails.application.configure do
     :address   => "smtp.mandrillapp.com",
     :port      => 25,
     :user_name => ENV["MANDRILL_USERNAME"],
-    :password  => ENV["MANDRILL_API_KEY"]
+    :password  => ENV["MANDRILL_API_KEY"],
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    :domain => 'nahuel-chaves.com.ar'
   }
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
