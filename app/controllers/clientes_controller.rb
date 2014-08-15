@@ -9,6 +9,12 @@ class ClientesController < ApplicationController
   # GET /clientes.json
   def index
     @clientes = Cliente.where('user_id' => current_user.id)
+    respond_to do |format|
+      format.html
+      format.json
+      format.csv { send_data @clientes.to_csv }
+      format.xls
+    end
   end
 
   # GET /clientes/1
