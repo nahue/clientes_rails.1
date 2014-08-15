@@ -1,0 +1,22 @@
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>User_ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+        <th>Otros Datos</th>
+        <th>URL</th>
+    </tr>
+    <% @clientes.each do |cliente| %>
+        <tr>
+            <td><%= cliente.id %></td>
+            <td><%= cliente.user_id %></td>
+            <td><%= cliente.nombre %></td>
+            <td><%= cliente.apellido %></td>
+            <td><%= cliente.email %></td>
+            <td><%= cliente.otros_datos %></td>
+            <td><%= cliente_url(cliente) %></td>
+        </tr>
+    <% end %>
+</table>

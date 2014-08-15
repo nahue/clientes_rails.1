@@ -11,7 +11,14 @@
   <div class="scrollable wrapper">
     <section class="panel">
     <header class="panel-heading"> Clientes </header>
-    <div class="panel-body">
+    <div class="row wrapper">
+      <div class="col-sm-5">
+        <a href="<%= clientes_path %>.xls" class="btn btn-default">Exportar a Excel</a>
+        <a href="<%= clientes_path %>.csv" class="btn btn-default">Exportar a CSV</a>
+      </div>
+    </div>
+
+
     <table class="table table-striped b-t text-sm">
       <thead>
         <tr>
@@ -44,7 +51,7 @@
         <% end %>
       </tbody>
     </table>
-    </div>
+
     <footer class="panel-footer">
       <%= link_to t('.new', :default => t("helpers.links.new")),
       new_cliente_path,
