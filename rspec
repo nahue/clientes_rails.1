@@ -1,0 +1,217 @@
+Script started on Sun Aug 17 01:29:00 2014
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Kscript rspectrspecirspecmrspecerspec rspec[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m script time rspec[K
+Script started, output file is time
+No examples found.
+
+
+Finished in 0.00042 seconds (files took 0.12047 seconds to load)
+[32m0 examples, 0 failures[0m
+
+Script done, output file is time
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Kttime spring s rspec[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m time spring rspec[K
+No examples found.
+
+
+Finished in 0.00109 seconds (files took 1.85 seconds to load)
+[32m0 examples, 0 failures[0m
+spring rspec  0,17s user 0,08s system 4% cpu 5,448 total
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Ktime spring rspec[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m time spring rspec[K
+No examples found.
+
+
+Finished in 0.00129 seconds (files took 5.62 seconds to load)
+[32m0 examples, 0 failures[0m
+spring rspec  0,16s user 0,08s system 41% cpu 0,583 total
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Kgguard[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m guard[K
+WARN: Unresolved specs during Gem::Specification.reset:
+      formatador (>= 0.2.4)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+01:29:48 - INFO - Guard here! It looks like your project has a Gemfile, yet you are running
+> [#] `guard` outside of Bundler. If this is your intent, feel free to ignore this
+> [#] message. Otherwise, consider using `bundle exec guard` to ensure your
+> [#] dependencies are loaded correctly.
+> [#] (You can run `guard` with --no-bundler-warning to get rid of this message.)
+01:29:48 - INFO - Guard is using TerminalTitle to send notifications.
+01:29:48 - INFO - Guard::RSpec is running
+01:29:48 - INFO - Guard::RSpec is running
+01:29:48 - INFO - Guard::RSpec is running
+01:29:48 - INFO - Guard is now watching at '/Users/nahuelchaves/code/clientes_rails.1'
+[0G[1] guard(main)> 
+[1] guard(main)> exit
+[1A[0G[1] guard(main)> exit[1B[0G]2;
+[0m01:29:51 - INFO - Bye bye...
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Kbbundle exec guard
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136D[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136Dbbin/gu[1m[31m...[39m[0m[32m[39m[33m[39m[32m[39m[33m[39m[32m[39m[33m[39mbundle[32m[39m[33m[39m
+ [32m-- corrections (errors: 1) --[39m[K[K
+[7mbundle*       [0m  [31mbundler[0m*        [31municorn[0m*        [31municorn_rails[0m*[K
+ [33m-- original --[39m[K[K
+[J[0mbin/gu[J[4A[0m[27m[24m[0m[27m[24m[39m[25Cbin/bundle[K[124C [31m⏎[39m[0m[27m[24m[39m[126D
+[1B[7mbundle*       [0m  [7mbundle*       [0m  [A[A[0m[27m[24m[0m[27m[24m[39m[25Cbin/bundle[K[124C [31m⏎[39m[0m[27m[24m[39m[126D
+[J[A[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m bin/gu[K[128C [31m⏎[39m[130D
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136D[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136Dbbundleexec 
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136D[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136Dbbundle exec guard[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m bundle exec guard[K[117C [31m⏎[39m[119D
+01:30:10 - INFO - Guard is using TerminalTitle to send notifications.
+01:30:10 - INFO - Guard::RSpec is running
+01:30:10 - INFO - Guard::RSpec is running
+01:30:10 - INFO - Guard::RSpec is running
+01:30:10 - INFO - Guard is now watching at '/Users/nahuelchaves/code/clientes_rails.1'
+[0G[1] guard(main)> q
+[1A[0G[1] guard(main)> q[1B[0G]2;
+[0m01:30:20 - INFO - Bye bye...
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Krrails g[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rails g[K
+Rails is not currently installed on this system. To get the latest version, simply type:
+
+    $ sudo gem install rails
+
+You can then rerun your "rails" command.
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Kwwhich rails[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m which rails[K
+/usr/bin/rails
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Krrials 
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136D[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136Daaia  rrails -v[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rails -v[K[126C [31m⏎[39m[128D
+Rails is not currently installed on this system. To get the latest version, simply type:
+
+    $ sudo gem install rails
+
+You can then rerun your "rails" command.
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Krrails --version[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rails --version[K
+Rails is not currently installed on this system. To get the latest version, simply type:
+
+    $ sudo gem install rails
+
+You can then rerun your "rails" command.
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Krrbenv rehash[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv rehash[K
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Krruby -v[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m ruby -v[K
+ruby 2.0.0p451 (2014-02-24 revision 45167) [universal.x86_64-darwin13]
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Krrben[1m[31m...[39m[0m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[K [1m[31m...[39m[0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[K[1C
+[0m--version                 exec                      installer                 shims                     version-file              whatis                  
+bootstrap-kubunutu-12-10  global                    local                     uninstall                 version-file-read         whence                  
+bootstrap-ubuntu-10-04    help                      prefix                    update                    version-file-write        which                   
+bootstrap-ubuntu-12-04    hooks                     rehash                    use                       version-name                                      
+commands                  init                      root                      vars                      version-origin                                    
+[Jcompletions               [Jinstall                   [Jshell                     [Jversion                   [Jversions                  [J                        [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv[K[0m[27m[24m[39m[1C[1m[31m...[39m[0m--version
+[7m--version               [0m  exec                      installer                 shims                     version-file              whatis                  [K
+bootstrap-kubunutu-12-10  global                    local                     uninstall                 version-file-read         whence                  [K
+bootstrap-ubuntu-10-04    help                      prefix                    update                    version-file-write        which                   [K
+bootstrap-ubuntu-12-04    hooks                     rehash                    use                       version-name                                      [K
+commands                  init                      root                      vars                      version-origin                                    [K
+[Jcompletions               [Jinstall                   [Jshell                     [Jversion                   [Jversions                  [J                        [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv --version[K[0m[27m[24m[39m
+[7m--version               [0m  [7m--version               [0m  [A[0m[27m[24m[0m[27m[24m[39m[25Crbenv --version[K[0m[27m[24m[39m[9Dbootstrap-kubunutu-12-10
+[0m--version                 [1B[7mbootstrap-kubunutu-12-10[0m  [A[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv bootstrap-kubunutu-12-10[K[0m[27m[24m[39m[14Dubuntu-10-04  
+[1B[0mbootstrap-kubunutu-12-10  [1B[7mbootstrap-ubuntu-10-04  [0m  [3A[0m[27m[24m[0m[27m[24m[39m[25Crbenv bootstrap-ubuntu-10-04[K[0m[27m[24m[39m2[3C
+[2B[0mbootstrap-ubuntu-10-04    [1B[7mbootstrap-ubuntu-12-04  [0m  [4A[0m[27m[24m[0m[27m[24m[39m[25Crbenv bootstrap-ubuntu-12-04[K[0m[27m[24m[39m[22Dcommands              [14D
+[3B[0mbootstrap-ubuntu-12-04    [1B[7mcommands                [0m  [5A[0m[27m[24m[0m[27m[24m[39m[25Crbenv commands[K[0m[27m[24m[39mpletions
+[4B[0mcommands                  [1B[7mcompletions             [0m  [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv completions[K[0m[27m[24m[39m[11Dexec       
+[26C[7mexec                    [0m  [5Bcompletions               [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv exec[K[0m[27m[24m[39mglobal
+[26C[0mexec                      [1B[26C[7mglobal                  [0m  [A[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv global[K[0m[27m[24m[39mhelp  
+[1B[26C[0mglobal                    [1B[26C[7mhelp                    [0m  [3A[0m[27m[24m[0m[27m[24m[39m[25Crbenv help[K[0m[27m[24m[39mooks
+[2B[26C[0mhelp                      [1B[26C[7mhooks                   [0m  [4A[0m[27m[24m[0m[27m[24m[39m[25Crbenv hooks[K[0m[27m[24m[39minit 
+[3B[26C[0mhooks                     [1B[26C[7minit                    [0m  [5A[0m[27m[24m[0m[27m[24m[39m[25Crbenv init[K[0m[27m[24m[39mstall
+[4B[26C[0minit                      [1B[26C[7minstall                 [0m  [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv install[K[0m[27m[24m[39mer
+[52C[7minstaller               [0m  [5B[26Cinstall                   [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv installer[K[0m[27m[24m[39m[9Dlocal    
+[52C[0minstaller                 [1B[52C[7mlocal                   [0m  [A[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv local[K[0m[27m[24m[39mprefix
+[1B[52C[0mlocal                     [1B[52C[7mprefix                  [0m  [3A[0m[27m[24m[0m[27m[24m[39m[25Crbenv prefix[K[0m[27m[24m[39mrehash
+[2B[52C[0mprefix                    [1B[52C[7mrehash                  [0m  [4A[0m[27m[24m[0m[27m[24m[39m[25Crbenv rehash[K[0m[27m[24m[39moot  
+[3B[52C[0mrehash                    [1B[52C[7mroot                    [0m  [5A[0m[27m[24m[0m[27m[24m[39m[25Crbenv root[K[0m[27m[24m[39mshell
+[4B[52C[0mroot                      [1B[52C[7mshell                   [0m  [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv shell[K[0m[27m[24m[39mims
+[78C[7mshims                   [0m  [5B[52Cshell                     [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv shims[K[0m[27m[24m[39m
+[J[A[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[K[1C
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136D[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136Drrbenv which[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv which[K[123C [31m⏎[39m[125D
+Usage: rbenv which <command>
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136D[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[134C [31m⏎[39m[136Drrbe[1m[31m...[39m[0m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[K[129C [31m⏎[39m[131D ver[1m[31m...[39m[0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv version[K[121C [31m⏎[39m[123D[?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv version[K[121C [31m⏎[39m[123D
+2.1.2 (set by /Users/nahuelchaves/.rbenv/version)
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Krrbe[1m[31m...[39m[0m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[K li[1m[31m...[39m[0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv li[K[1m[31m...[39m[0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv li[K[1m[31m...[39m[0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv li[K  [1m[31m...[39m[0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[K[1C
+[0m--version                 exec                      installer                 shims                     version-file              whatis                  
+bootstrap-kubunutu-12-10  global                    local                     uninstall                 version-file-read         whence                  
+bootstrap-ubuntu-10-04    help                      prefix                    update                    version-file-write        which                   
+bootstrap-ubuntu-12-04    hooks                     rehash                    use                       version-name                                      
+commands                  init                      root                      vars                      version-origin                                    
+[Jcompletions               [Jinstall                   [Jshell                     [Jversion                   [Jversions                  [J                        [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv[K[0m[27m[24m[39m[1C[1m[31m...[39m[0m--version
+[7m--version               [0m  exec                      installer                 shims                     version-file              whatis                  [K
+bootstrap-kubunutu-12-10  global                    local                     uninstall                 version-file-read         whence                  [K
+bootstrap-ubuntu-10-04    help                      prefix                    update                    version-file-write        which                   [K
+bootstrap-ubuntu-12-04    hooks                     rehash                    use                       version-name                                      [K
+commands                  init                      root                      vars                      version-origin                                    [K
+[Jcompletions               [Jinstall                   [Jshell                     [Jversion                   [Jversions                  [J                        [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv --version[K[0m[27m[24m[39m
+[7m--version               [0m  [7m--version               [0m  [A[0m[27m[24m[0m[27m[24m[39m[25Crbenv --version[K[0m[27m[24m[39m[9Dbootstrap-kubunutu-12-10
+[0m--version                 [1B[7mbootstrap-kubunutu-12-10[0m  [A[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv bootstrap-kubunutu-12-10[K[0m[27m[24m[39m[14Dubuntu-10-04  
+[1B[0mbootstrap-kubunutu-12-10  [1B[7mbootstrap-ubuntu-10-04  [0m  [3A[0m[27m[24m[0m[27m[24m[39m[25Crbenv bootstrap-ubuntu-10-04[K[0m[27m[24m[39m2[3C
+[2B[0mbootstrap-ubuntu-10-04    [1B[7mbootstrap-ubuntu-12-04  [0m  [4A[0m[27m[24m[0m[27m[24m[39m[25Crbenv bootstrap-ubuntu-12-04[K[0m[27m[24m[39m[22Dcommands              [14D
+[3B[0mbootstrap-ubuntu-12-04    [1B[7mcommands                [0m  [5A[0m[27m[24m[0m[27m[24m[39m[25Crbenv commands[K[0m[27m[24m[39mpletions
+[4B[0mcommands                  [1B[7mcompletions             [0m  [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv completions[K[0m[27m[24m[39m[11Dexec       
+[26C[7mexec                    [0m  [5Bcompletions               [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv exec[K[0m[27m[24m[39mglobal
+[26C[0mexec                      [1B[26C[7mglobal                  [0m  [A[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv global[K[0m[27m[24m[39mhelp  
+[1B[26C[0mglobal                    [1B[26C[7mhelp                    [0m  [3A[0m[27m[24m[0m[27m[24m[39m[25Crbenv help[K[0m[27m[24m[39mooks
+[2B[26C[0mhelp                      [1B[26C[7mhooks                   [0m  [4A[0m[27m[24m[0m[27m[24m[39m[25Crbenv hooks[K[0m[27m[24m[39minit 
+[3B[26C[0mhooks                     [1B[26C[7minit                    [0m  [5A[0m[27m[24m[0m[27m[24m[39m[25Crbenv init[K[0m[27m[24m[39mstall
+[4B[26C[0minit                      [1B[26C[7minstall                 [0m  [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv install[K[0m[27m[24m[39mer
+[52C[7minstaller               [0m  [5B[26Cinstall                   [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv installer[K[0m[27m[24m[39m[9Dlocal    
+[52C[0minstaller                 [1B[52C[7mlocal                   [0m  [A[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv local[K[0m[27m[24m[39mprefix
+[1B[52C[0mlocal                     [1B[52C[7mprefix                  [0m  [3A[0m[27m[24m[0m[27m[24m[39m[25Crbenv prefix[K[0m[27m[24m[39mrehash
+[2B[52C[0mprefix                    [1B[52C[7mrehash                  [0m  [4A[0m[27m[24m[0m[27m[24m[39m[25Crbenv rehash[K[0m[27m[24m[39moot  
+[3B[52C[0mrehash                    [1B[52C[7mroot                    [0m  [5A[0m[27m[24m[0m[27m[24m[39m[25Crbenv root[K[0m[27m[24m[39mshell
+[4B[52C[0mroot                      [1B[52C[7mshell                   [0m  [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv shell[K[0m[27m[24m[39mims
+[78C[7mshims                   [0m  [5B[52Cshell                     [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv shims[K[0m[27m[24m[39muninstall
+[78C[0mshims                     [1B[78C[7muninstall               [0m  [A[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv uninstall[K[0m[27m[24m[39m[8Dpdate   
+[1B[78C[0muninstall                 [1B[78C[7mupdate                  [0m  [3A[0m[27m[24m[0m[27m[24m[39m[25Crbenv update[K[0m[27m[24m[39mse   
+[2B[78C[0mupdate                    [1B[78C[7muse                     [0m  [4A[0m[27m[24m[0m[27m[24m[39m[25Crbenv use[K[0m[27m[24m[39mvars
+[3B[78C[0muse                       [1B[78C[7mvars                    [0m  [5A[0m[27m[24m[0m[27m[24m[39m[25Crbenv vars[K[0m[27m[24m[39me[2Cion
+[4B[78C[0mvars                      [1B[78C[7mversion                 [0m  [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv version[K[0m[27m[24m[39ma[2C   
+[4B[78C[7mvars                    [0m  [1B[78Cversion                   [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv vars[K[0m[27m[24m[39m
+[J[A[35C[1m [0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv vars[1m [0m[K[0m [?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv vars[K
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Krrbe[1m[31m...[39m[0m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[K[1m[31m...[39m[0m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[K[33m[39m[33m[39m[33m[39m[33m[39m
+ [33m-- external command --[39m
+[0mrbenv
+ [33m-- shell function --[39m
+[0mrbenv
+ [33m-- parameter --[39m
+[0mRBENV_ROOT   RBENV_SHELL
+ [33m-- named directory --[39m
+[J[0mRBENV_ROOT[J[8A[0m[27m[24m[0m[27m[24m[39m[25Crbenv[K[0m[27m[24m[39m[1m[31m...[39m[0m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m
+ [33m-- external command --[39m[K[K
+[7mrbenv[0m[K
+ [33m-- shell function --[39m[K[K
+[0mrbenv[K
+ [33m-- parameter --[39m[K[K
+[0mRBENV_ROOT   RBENV_SHELL[K
+ [33m-- named directory --[39m[K[K
+[J[0mRBENV_ROOT[J[8A[0m[27m[24m[0m[27m[24m[39m[25Crbenv[K[0m[27m[24m[39m
+[1B[7mrbenv[0m[7mrbenv[0m[A[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv[K[0m[27m[24m[39m
+[J[A[30C[1m [0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[1m [0m[K[1m[31m...[39m[0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[K[1C
+[0m--version                 exec                      installer                 shims                     version-file              whatis                  
+bootstrap-kubunutu-12-10  global                    local                     uninstall                 version-file-read         whence                  
+bootstrap-ubuntu-10-04    help                      prefix                    update                    version-file-write        which                   
+bootstrap-ubuntu-12-04    hooks                     rehash                    use                       version-name                                      
+commands                  init                      root                      vars                      version-origin                                    
+[Jcompletions               [Jinstall                   [Jshell                     [Jversion                   [Jversions                  [J                        [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv[K[0m[27m[24m[39m[1C[1m[31m...[39m[0m--version
+[7m--version               [0m  exec                      installer                 shims                     version-file              whatis                  [K
+bootstrap-kubunutu-12-10  global                    local                     uninstall                 version-file-read         whence                  [K
+bootstrap-ubuntu-10-04    help                      prefix                    update                    version-file-write        which                   [K
+bootstrap-ubuntu-12-04    hooks                     rehash                    use                       version-name                                      [K
+commands                  init                      root                      vars                      version-origin                                    [K
+[Jcompletions               [Jinstall                   [Jshell                     [Jversion                   [Jversions                  [J                        [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv --version[K[0m[27m[24m[39m
+[7m--version               [0m  [7m--version               [0m  [A[0m[27m[24m[0m[27m[24m[39m[25Crbenv --version[K[0m[27m[24m[39m[9Dbootstrap-kubunutu-12-10
+[0m--version                 [1B[7mbootstrap-kubunutu-12-10[0m  [A[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv bootstrap-kubunutu-12-10[K[0m[27m[24m[39m[14Dubuntu-10-04  
+[1B[0mbootstrap-kubunutu-12-10  [1B[7mbootstrap-ubuntu-10-04  [0m  [3A[0m[27m[24m[0m[27m[24m[39m[25Crbenv bootstrap-ubuntu-10-04[K[0m[27m[24m[39m2[3C
+[2B[0mbootstrap-ubuntu-10-04    [1B[7mbootstrap-ubuntu-12-04  [0m  [4A[0m[27m[24m[0m[27m[24m[39m[25Crbenv bootstrap-ubuntu-12-04[K[0m[27m[24m[39m[22Dcommands              [14D
+[3B[0mbootstrap-ubuntu-12-04    [1B[7mcommands                [0m  [5A[0m[27m[24m[0m[27m[24m[39m[25Crbenv commands[K[0m[27m[24m[39mpletions
+[4B[0mcommands                  [1B[7mcompletions             [0m  [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv completions[K[0m[27m[24m[39m[11Dexec       
+[26C[7mexec                    [0m  [5Bcompletions               [6A[0m[27m[24m[0m[27m[24m[39m[25Crbenv exec[K[0m[27m[24m[39mglobal
+[26C[0mexec                      [1B[26C[7mglobal                  [0m  [A[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv global[K[0m[27m[24m[39m
+[J[A[37C[1m [0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv global[1m [0m[K[0m [?1l>[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv global[K
+2.1.2
+[1m[7m%[27m[1m[0m                                                                                                                                                                  [0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m [Krrb[1m[31m...[39m[0m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rb[K[33m[39m[33m[39m[33m[39m[33m[39m
+ [33m-- external command --[39m
+[0mrbenv        rbricks    
+ [33m-- shell function --[39m
+[0mrbenv
+ [33m-- parameter --[39m
+[0mRBENV_ROOT   RBENV_SHELL
+ [33m-- named directory --[39m
+[J[0mRBENV_ROOT[J[8A[0m[27m[24m[0m[27m[24m[39m[25Crb[K[0m[27m[24m[39me[1m[31m...[39m[0m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m
+[J[A[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv[K glo[1m[31m...[39m[0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv global[1m [0m[K[1m[31m...[39m[0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv global[K[1C
+[J[0m2.1.1   [J2.1.2   [Jsystem[J[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv global[K[0m[27m[24m[39m[1C[1m[31m...[39m[0m2.1.1
+[J[7m2.1.1 [0m  [J2.1.2   [Jsystem[J[A[0m[27m[24m[0m[27m[24m[39m[25Crbenv global 2.1.1[K[0m[27m[24m[39m
+[7m2.1.1 [0m  [7m2.1.1 [0m  [A[0m[27m[24m[0m[27m[24m[39m[25Crbenv global 2.1.1[K[0m[27m[24m[39m2
+[8C[7m2.1.2 [0m  2.1.1   [A[0m[27m[24m[0m[27m[24m[39m[25Crbenv global 2.1.2[K[0m[27m[24m[39m
+[J[A[43C[1m [0m[0m[27m[24m[J[36m~/c/clientes_rails.1[39m [1m[31m❯[33m❯[32m❯[39m[0m rbenv global 2.1.2[1m [0m[K[0m [?1

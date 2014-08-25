@@ -1,20 +1,19 @@
 Rails.application.routes.draw do
-  resources :tipo_trabajos
 
-
-
-  resources :clientes do
-    #resources :trabajos, only: [:new,:index, :show, :edit, :update]
-    #resource :trabajos, only: [ :create]
-    resources :trabajos
+  namespace :api, defaults: {format: :json} do
+    namespace :v1 do
+      resources :tipo_trabajos
+      resources :clientes do
+        resources :trabajos
+      end
+    end
   end
-
   devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords"}, skip: [:sessions, :registrations]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'clientes#index'
+  root :to => "home#index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -53,9 +53,14 @@
     </table>
 
     <footer class="panel-footer">
-      <%= link_to t('.new', :default => t("helpers.links.new")),
+      <div class="row">
+        <div class="col-sm-8"><%= link_to t('.new', :default => t("helpers.links.new")),
       new_cliente_path,
-      :class => 'btn btn-info' %>
+      :class => 'btn btn-info' %></div>
+      <div class="col-sm-4 text-right">
+      <%= will_paginate @clientes, renderer: BootstrapPagination::Rails, :previous_label => '<i class="fa fa-chevron-left"></i>', :next_label => '<i class="fa fa-chevron-right"></i>' %>
+      </div>
+      </div>
     </footer>
   </section>
 </div>
