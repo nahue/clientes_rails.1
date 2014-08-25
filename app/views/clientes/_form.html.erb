@@ -1,40 +1,50 @@
-<%= form_for @cliente, :html => { :class => 'form-horizontal form-model' } do |f| %>
-  <div class="form-group">
+<%= simple_form_for @cliente, :html => { :class => 'form-horizontal form-model' } do |f| %>
+  <!--<div class="form-group">
     <%= f.label :empresa, :class => 'control-label col-md-2' %>
     <div class="col-md-10">
       <%= f.text_field :empresa, :class => 'text-field form-control' %>
     </div>
-  </div>
+  </div>-->
+  <%= f.input :empresa %>
+  <!--
   <div class="form-group">
     <%= f.label :nombre, :class => 'control-label col-md-2' %>
     <div class="col-md-10">
-      <%= f.text_field :nombre, :class => 'text-field form-control' %>
+      <%= f.input :nombre, :class => 'text-field form-control' %>
     </div>
   </div>
-  <div class="form-group">
+  -->
+  <%= f.input :nombre %>
+  <!--<div class="form-group">
     <%= f.label :apellido, :class => 'control-label col-md-2' %>
     <div class="col-md-10">
       <%= f.text_field :apellido, :class => 'text-field form-control' %>
     </div>
-  </div>
+  </div>-->
+  <%= f.input :apellido %>
+  <!--
   <div class="form-group">
     <%= f.label :email, :class => 'control-label col-md-2' %>
     <div class="col-md-10">
       <%= f.email_field :email, :class => 'text-field form-control' %>
     </div>
-  </div>
-  <div class="form-group">
+  </div>-->
+  <%= f.input :email %>
+  <!--<div class="form-group">
     <%= f.label :telefono, :class => 'control-label col-md-2' %>
     <div class="col-md-10">
       <%= f.text_field :telefono, :class => 'text-field form-control' %>
     </div>
-  </div>
+  </div>-->
+  <%= f.input :telefono %>
+  <!--
   <div class="form-group">
     <%= f.label :otros_datos, :class => 'control-label col-md-2' %>
     <div class="col-md-10">
       <%= f.text_area :otros_datos, :class => 'text-field form-control' %>
     </div>
-  </div>
+  </div>-->
+  <%= f.input :otros_datos %>
 
   <div class="form-group">
     <div class='col-md-offset-2 col-md-10'>
