@@ -6,7 +6,8 @@
   <body>
     <h1>Saludos, <%= @cliente.nombre %></h1>
     <p>
-      Se ha generado una nueva orden de trabajo, los datos son los siguientes:
+      Hemos generado una nueva orden de trabajo a partir de su solicitud.
+      Por favor, lea la siguiente descripción y confirmela respondiendo este email.
 
       <ul>
         <li>Descripcion: <%= @trabajo.descripcion %></li>
@@ -14,6 +15,6 @@
       </ul>
     </p>
 
-    <p>Ante cualquier duda o reclame contactese a info@***REMOVED***</p>
+    <p>Ante cualquier duda o reclame contactese a <%= @usuario.email %></p>
   </body>
 </html>
