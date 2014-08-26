@@ -14,7 +14,7 @@ class TrabajoMailer < ActionMailer::Base
              "from" => usuario.email,
              "reply_to" => usuario.email,
              "subject" => "Nuevo trabajo asignado",
-             "Message-ID" => "#{Digest::SHA2.hexdigest(Time.now.to_i.to_s)}@{dominio}"
+             "Message-ID" => "#{Digest::SHA2.hexdigest(Time.now.to_i.to_s)}@#{dominio}"
         )
     end
 
