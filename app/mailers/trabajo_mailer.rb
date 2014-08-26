@@ -1,3 +1,4 @@
+require 'digest/sha2'
 class TrabajoMailer < ActionMailer::Base
 
 
