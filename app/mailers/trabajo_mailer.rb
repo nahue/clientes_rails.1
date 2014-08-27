@@ -2,7 +2,7 @@ require 'digest/sha2'
 class TrabajoMailer < ActionMailer::Base
 
 
-    #default from: "info@***REMOVED***"
+    #default from: "info@nahuel-chaves.com.ar"
 
     def detalle_trabajo(usuario, cliente, trabajo)
         if usuario.preferencia.notificar_cliente
