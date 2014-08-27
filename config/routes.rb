@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
+
+  resources :preferencias
+
   resources :tipo_trabajos
 
 
 
   resources :clientes do
-    #resources :trabajos, only: [:new,:index, :show, :edit, :update]
-    #resource :trabajos, only: [ :create]
     resources :trabajos
+  end
+
+  resources :users, :path => 'usuarios', only: [] do
+    resource :preferencia
   end
 
   devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords"}, skip: [:sessions, :registrations]

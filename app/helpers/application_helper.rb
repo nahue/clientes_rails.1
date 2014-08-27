@@ -1,6 +1,6 @@
 module ApplicationHelper
     def appname
-        "wip"
+        current_user.preferencia.titulo.presence || "wip"
     end
 
     def avatar_url(user, size)

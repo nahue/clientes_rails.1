@@ -7,18 +7,18 @@
         <ul class="dropdown-menu m-t-sm animated fadeInLeft">
             <span class="arrow top"></span>
             <li>
-                <a href="#">Settings</a>
+                <a href="#"><%= link_to 'Preferencias', edit_user_preferencia_path(current_user) %></a>
             </li>
-            <li>
+            <!--<li>
                 <a href="profile.html">Profile</a>
             </li>
             <li>
                 <a href="#"><span class="badge bg-danger pull-right">3</span> Notifications </a>
-            </li>
+            </li>-->
             <li class="divider"></li>
-            <li>
+            <!--<li>
                 <a href="docs.html">Help</a>
-            </li>
+            </li>-->
             <% if defined?(Devise) %>
                 <% if user_signed_in? %>
                     <li><%= link_to "Salir", destroy_user_session_path, method: :delete %></li>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Notificar cliente:</strong>
+  <%= @preferencia.notificar_cliente %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @preferencia.user %>
+</p>
+
+<%= link_to 'Edit', edit_preferencia_path(@preferencia) %> |
+<%= link_to 'Back', preferencias_path %>
