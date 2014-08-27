@@ -21,11 +21,11 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :authentication => :plain,
-    :address => ENV["SMTP_HOST"],
+    :address => "***REMOVED***",
     :port => 587,
-    :domain => ENV["DOMAIN"],
-    :user_name => ENV["SMTP_USERNAME"],
-    :password => ENV["SMTP_PASSWORD"]
+    :domain => "***REMOVED***",
+    :user_name => "***REMOVED***",
+    :password => "***REMOVED***"
   }
 
   # Print deprecation notices to the Rails logger.
