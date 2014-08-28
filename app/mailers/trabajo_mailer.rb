@@ -5,7 +5,7 @@ class TrabajoMailer < ActionMailer::Base
     #default from: "info@nahuel-chaves.com.ar"
 
     def detalle_trabajo(usuario, cliente, trabajo)
-        if usuario.preferencia.notificar_cliente
+        if usuario.get_preferencia(:notificar_cliente)
             @usuario = usuario
             @cliente = cliente
             @trabajo = trabajo
