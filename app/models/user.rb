@@ -24,4 +24,8 @@ class User < ActiveRecord::Base
   def to_s
     username
   end
+
+  def get_preferencia(key)
+    self.preferencia[key] if self.preferencia.present?
+  end
 end
