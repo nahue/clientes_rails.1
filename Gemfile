@@ -66,3 +66,4 @@ gem 'capistrano-rails', '~> 1.1.1'
 gem 'capistrano-rbenv', '~> 2.0'
 gem 'dotenv-deployment'
 gem 'newrelic_rpm'
+gem "paperclip", "~> 4.1"

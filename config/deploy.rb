@@ -11,7 +11,7 @@ set :repo_url, 'https://github.com/nahue/clientes_rails.1.git'
 set :deploy_to, '/home/deploy/clientesRails'
 
 set :linked_files, %w{config/database.yml .env}
-set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/assets}
 
 
 # Default value for :scm is :git

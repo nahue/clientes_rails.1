@@ -70,6 +70,6 @@ class PreferenciasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def preferencia_params
-      params.require(:preferencia).permit(:notificar_cliente, :user_id, :titulo)
+      params.require(:preferencia).permit(:notificar_cliente, :user_id, :titulo, :logo)
     end
 end
