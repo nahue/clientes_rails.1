@@ -3,6 +3,9 @@ ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
+group :development, :test, :production do
+  gem 'dotenv-rails'
+end
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -49,9 +52,7 @@ gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'bootstrap-sass-extras'
 
-group :development, :test do
-  gem 'dotenv-rails'
-end
+
 
 group :development do
   gem 'pry-rails'
