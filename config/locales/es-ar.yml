@@ -2,6 +2,7 @@
   helpers:
     actions: 'Acciones'
     links:
+      back: 'Volver'
       new: 'Nuevo'
       edit: 'Editar'
       destroy: 'Eliminar'
@@ -71,3 +72,7 @@
       not_saved:
         one: 'Ocurrió un error al tratar de guardar %{resource}:'
         other: 'Ocurrieron %{count} errores al tratar de guardar %{resource}:'
+  will_paginate:
+      previous_label: "<i class='fa fa-chevron-left'></i>"
+      next_label: "<i class='fa fa-chevron-right'></i>"
+      page_gap: "&hellip;"

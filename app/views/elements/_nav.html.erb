@@ -6,9 +6,7 @@
         </a>
         <ul class="dropdown-menu m-t-sm animated fadeInLeft">
             <span class="arrow top"></span>
-            <li>
-                <a href="#"><%= link_to 'Preferencias', edit_user_preferencia_path(current_user) %></a>
-            </li>
+            <li><%= link_to 'Preferencias', edit_user_preferencia_path(current_user) %></li>
             <!--<li>
                 <a href="profile.html">Profile</a>
             </li>
@@ -21,6 +19,7 @@
             </li>-->
             <% if defined?(Devise) %>
                 <% if user_signed_in? %>
+                    <li><%= link_to "Mi Perfil", edit_user_registration_path %></li>
                     <li><%= link_to "Salir", destroy_user_session_path, method: :delete %></li>
                 <% end %>
             <% end %>

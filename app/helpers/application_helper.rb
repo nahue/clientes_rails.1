@@ -1,7 +1,7 @@
 module ApplicationHelper
-    def appname
-        if current_user.present?
-            current_user.get_preferencia(:titulo) || "wip"
+    def appname(user)
+        if user.present? and user.get_preferencia(:titulo) != ""
+            user.get_preferencia(:titulo) || "wip"
         else
             "wip"
         end

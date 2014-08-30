@@ -1,4 +1,11 @@
-<h2>Editar Usuario</h2>
+<header class="header bg-info">
+  <div class="row b-b m-l-none m-r-none">
+    <div class="col-sm-4">
+      <h3 class="m-t m-b-none">Mi Perfil</h3>
+      <p class="block text-muted">Datos personales</p>
+    </div>
+  </div>
+</header>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
@@ -13,6 +20,7 @@
     <%= f.input :password, autocomplete: "off", label: "Contraseña", hint: "deje el campo en blanco si no desea modificarla", required: false %>
     <%= f.input :password_confirmation, label: "Confirmar Contraseña", required: false %>
     <%= f.input :current_password, label: "Contraseña actual", hint: "necesitamos su clave actual para confirmar los cambios", required: true %>
+    <%= f.input :full_name %>
   </div>
 
   <div class="form-actions">

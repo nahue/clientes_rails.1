@@ -58,6 +58,12 @@ group :development do
   gem 'pry-rails'
   gem 'better_errors'
 end
+group :development, :test do
+  gem 'spring-commands-rspec'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'rb-fsevent' if `uname` =~ /Darwin/
+end
 
 #gem 'rails_12factor', group: :production
 gem 'capistrano', '~> 3.1.0'
@@ -67,3 +73,5 @@ gem 'capistrano-rbenv', '~> 2.0'
 gem 'dotenv-deployment'
 gem 'newrelic_rpm'
 gem "paperclip", "~> 4.1"
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'

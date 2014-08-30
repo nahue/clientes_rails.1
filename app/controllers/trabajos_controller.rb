@@ -1,11 +1,12 @@
 class TrabajosController < ApplicationController
   before_action :set_trabajo, only: [:show, :edit, :update, :destroy]
   before_action :set_cliente, only: [:new, :edit, :index, :show, :create, :update, :destroy]
+  before_action :require_user_signed_in, except: :confirm
   # GET /trabajos
   # GET /trabajos.json
   def index
     @cliente = Cliente.find(params[:cliente_id])
-    @trabajos = Trabajo.where('cliente_id = ?', @cliente.id)
+    @trabajos = Trabajo.where(:cliente_id => @cliente.id).paginate(:page => params[:page]).order('id DESC')
   end
 
   # GET /trabajos/1
@@ -26,13 +27,14 @@ class TrabajosController < ApplicationController
   # POST /trabajos.json
   def create
     @trabajo = Trabajo.new(trabajo_params)
+    @cliente = Cliente.find(params[:cliente_id])
     @trabajo.cliente = @cliente
 
     respond_to do |format|
       if @trabajo.save
         TrabajoMailer.detalle_trabajo(current_user, @cliente, @trabajo).deliver
 
-        format.html { redirect_to cliente_trabajos_path(@cliente), notice: 'Trabajo was successfully created.' }
+        format.html { redirect_to cliente_path(@cliente), notice: 'Trabajo was successfully created.' }
         format.json { render :show, status: :created, location: @trabajo }
       else
         format.html { render :new }
@@ -46,7 +48,7 @@ class TrabajosController < ApplicationController
   def update
     respond_to do |format|
       if @trabajo.update(trabajo_params)
-        format.html { redirect_to cliente_trabajo_path(@cliente, @trabajo), notice: 'Trabajo was successfully updated.' }
+        format.html { redirect_to cliente_path(@cliente), notice: 'Trabajo was successfully updated.' }
         format.json { render :show, status: :ok, location: cliente_trabajo_path(@cliente, @trabajo) }
       else
         format.html { render :edit }
@@ -60,8 +62,22 @@ class TrabajosController < ApplicationController
   def destroy
     @trabajo.destroy
     respond_to do |format|
-      format.html { redirect_to cliente_trabajos_url(@cliente), notice: 'Trabajo was successfully destroyed.' }
+      format.html { redirect_to cliente_url(@cliente), notice: 'Trabajo was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def confirm
+    @trabajo = Trabajo.find(params[:trabajo_id])
+    @user = @trabajo.cliente.user
+    token = params[:confirmation_token]
+    if @trabajo.confirmation_token == token
+      respond_to do |format|
+        if @trabajo.update(confirmation_token: "", confirmed: true)
+          format.html {render :layout => 'confirm'}
+        end
+      end
+
     end
   end
 

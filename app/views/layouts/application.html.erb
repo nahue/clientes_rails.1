@@ -33,18 +33,28 @@
     <section class="hbox stretch">
       <aside class="bg-light aside b-r" id="nav">
         <section class="vbox">
-          <header class="bg-black nav-bar"> <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav"> <i class="fa fa-bars"></i> </a> <a href="#" class="nav-brand" data-toggle="fullscreen"><%=appname %></a> <a class="btn btn-link visible-xs" data-toggle="collapse" data-target=".navbar-collapse"> <i class="fa fa-comment-o"></i> </a> </header>
+          <header class="bg-black nav-bar"> <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav"> <i class="fa fa-bars"></i> </a> <a href="#" class="nav-brand" data-toggle="fullscreen"><%=appname(current_user) %></a> <a class="btn btn-link visible-xs" data-toggle="collapse" data-target=".navbar-collapse"> <i class="fa fa-comment-o"></i> </a> </header>
           <section class="w-f">
               <%= render 'elements/nav' %>
           </section>
         </section>
       </aside>
       <section id="content">
-        <%= bootstrap_flash %>
-        <%= yield %>
+        <div class="vbox">
+            <%= yield :header %>
 
+            <section class="scrollable wrapper">
+                <% if bootstrap_flash %>
+                    <div class="row">
+                        <div class="col-lg-12"><%= bootstrap_flash %></div>
+                    </div>
+                <% end %>
+                <%= yield %>
+            </section>
         </div>
+
         <!-- END .hbox.stretch -->
       </section>
+        </section>
     </body>
   </html>

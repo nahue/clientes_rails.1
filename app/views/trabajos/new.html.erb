@@ -1,6 +1,8 @@
 <%- model_class = Trabajo -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => Trabajo %></h1>
-</div>
+<% content_for :header do %>
+    <header class="header bg-light dker bg-gradient">
+      <p><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => Trabajo %></p>
+    </header>
+<% end %>
 <%= render :partial => 'form' %>
 

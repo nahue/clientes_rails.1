@@ -14,7 +14,7 @@
   .ExternalClass
   {width: 100%; background-color: #ffffff;}
   body{width: 100%; height: 100%; background-color: #ffffff; margin:0; padding:0; -webkit-font-smoothing: antialiased;}
-  html{width: 100%; background-color: #ffffff;}
+  html{width: 100%; height: 100%; background-color: #ffffff;}
   @font-face {
   font-family: 'proxima_novalight';src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.eot');src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.ttf') format('truetype');font-weight: normal;font-style: normal;}
   @font-face {
@@ -53,36 +53,27 @@
   @media only screen and (max-width: 479px)
   {
   -->
-  <style type="text/css">
-  @media only screen and (max-width: 479px){
-      body{width:auto!important;}
-      table[class=full2] {width: 100%!important; clear: both; }
-      table[class=mobile2] {width: 100%!important; padding-left: 20px; padding-right: 20px; clear: both; }
-      table[class=fullCenter2] {width: 100%!important; text-align: center!important; clear: both; }
-      td[class=fullCenter2] {width: 100%!important; text-align: center!important; clear: both; }
-      table[class=full] {width: 100%!important; clear: both; }
-      table[class=mobile] {width: 100%!important; padding-left: 20px; padding-right: 20px; clear: both; }
-      table[class=fullCenter] {width: 100%!important; text-align: center!important; clear: both; }
-      td[class=fullCenter] {width: 100%!important; text-align: center!important; clear: both; }
-      td[class=pad15] {width: 100%!important; padding-left: 15px; padding-right: 15px; clear: both;}
-      .erase {display: none;}
+  <style type="text/css"> @media only screen and (max-width: 479px){
+  body{width:auto!important;}
+  table[class=full2] {width: 100%!important; clear: both; }
+  table[class=mobile2] {width: 100%!important; padding-left: 20px; padding-right: 20px; clear: both; }
+  table[class=fullCenter2] {width: 100%!important; text-align: center!important; clear: both; }
+  td[class=fullCenter2] {width: 100%!important; text-align: center!important; clear: both; }
+  table[class=full] {width: 100%!important; clear: both; }
+  table[class=mobile] {width: 100%!important; padding-left: 20px; padding-right: 20px; clear: both; }
+  table[class=fullCenter] {width: 100%!important; text-align: center!important; clear: both; }
+  td[class=fullCenter] {width: 100%!important; text-align: center!important; clear: both; }
+  td[class=pad15] {width: 100%!important; padding-left: 15px; padding-right: 15px; clear: both;}
+  .erase {display: none;}
+
   }
-  </style>
+  } </style>
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color: #ffffff;">
-  <!--<h1>Saludos, <%= @cliente.nombre %></h1>
-  <p>
-  Hemos generado una nueva orden de trabajo a partir de su solicitud.
-  Por favor, lea la siguiente descripción y confirmela respondiendo este email.
-  <ul>
-    <li>Descripcion: <%= @trabajo.descripcion %></li>
-    <li>Valor: <%= @trabajo.valor %></li>
-  </ul>
-  </p>
-  <p>Ante cualquier duda o reclame contactese a <%= @usuario.email %></p>-->
   <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" bgcolor="#303030" style="background-color: rgb(48, 48, 48);">
   <tr>
-    <td align="center" style="background-image: url('http://rocketway.net/themebuilder/template/templates/notify/images/not1_bg_image.jpg'); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center center; background-repeat: no-repeat; background-color: #23282b;" id="not1">
+    <td>
+    <!--align="center" style="background-image: url('http://rocketway.net/themebuilder/template/templates/notify/images/not1_bg_image.jpg'); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center center; background-repeat: no-repeat; background-color: #23282b;" id="not1"> -->
 
 
       <!-- Mobile Wrapper -->
@@ -205,7 +196,7 @@
                   <table width="265" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
                     <tr>
                       <td align="center" valign="middle" width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif; font-size: 39px; color: rgb(33, 33, 33); line-height: 44px; font-weight: 100;"class="fullCenter" >
-                        <!--[if !mso]><!--><span style="font-family: 'proxima_novathin', Helvetica; font-weight: normal;"><!--<![endif]-->Hola, <%= @cliente.nombre %>!<!--[if !mso]><!--></span><!--<![endif]-->
+                        <!--[if !mso]><!--><span style="font-family: 'proxima_novathin', Helvetica; font-weight: normal;"><!--<![endif]-->Hola, <%= @trabajo.cliente.nombre %>!<!--[if !mso]><!--></span><!--<![endif]-->
                       </td>
                     </tr>
                   </table>
@@ -235,10 +226,7 @@
                   <table width="265" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
                     <tr>
                       <td valign="middle" width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: rgb(81, 81, 81); line-height: 24px;"class="fullCenter" >
-                        <!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica; font-weight: normal;"><!--<![endif]-->Hemos generado una nueva orden de trabajo a partir de su solicitud. Por favor, lea la siguiente descripción y confirmela pulsando en boton.<ul style="list-style: none; padding: 0">
-    <li><strong>Descripcion</strong>: <%= @trabajo.descripcion %></li>
-    <li><strong>Valor</strong>: $<%= @trabajo.valor.to_i %></li>
-  </ul><!--[if !mso]><!--></span><!--<![endif]-->
+                        <!--[if !mso]><!--><span style="font-family: 'proxima_nova_rgregular', Helvetica; font-weight: normal;"><!--<![endif]--><%= yield %><!--[if !mso]><!--></span><!--<![endif]-->
                       </td>
                     </tr>
                   </table>
@@ -259,34 +247,6 @@
               </tr>
             </table>
 
-            <table width="352" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff"object="drag-module-small" style="background-color: rgb(255, 255, 255);">
-              <tr>
-                <td width="100%" valign="middle" align="center">
-
-                  <table width="265" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
-
-                    <tr>
-                      <td valign="middle" width="100%" class="icon18" align="center">
-
-                        <!-- Input 1 -->
-                        <table width="265" border="0" cellpadding="0" cellspacing="0" align="left" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="full">
-                          <tr>
-                            <td width="44" height="44" bgcolor="#1dc8e9"style="text-align: center; background-color: rgb(29, 200, 233);"><span ><img src="http://rocketway.net/themebuilder/template/templates/notify/images/icon_18px_1.png" width="18" alt="" border="0" ></span></td>
-                            <td width="20" height="44" bgcolor="#f5f7f7"style="background-color: rgb(245, 247, 247);"></td>
-                            <td width="181" height="44" bgcolor="#f5f7f7"style="text-align: left; font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: rgb(29, 200, 233); line-height: 24px; background-color: rgb(245, 247, 247);" ><!--[if !mso]><!--><span style="font-family: proxima_nova_rgregular, Helvetica; font-weight: normal; color: rgb(29, 200, 233);"><!--<![endif]--><%= @usuario.full_name.present? ? @usuario.full_name : @usuario.email %><!--[if !mso]><!--></span><!--<![endif]--></td>
-                            <td width="20" height="44" bgcolor="#f5f7f7"style="background-color: rgb(245, 247, 247);"></td>
-                          </tr>
-                        </table><!-- End Space -->
-
-                      </td>
-                    </tr>
-                    <tr>
-                      <td width="100%" height="1"></td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
 
             <table width="352" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile" bgcolor="#ffffff"object="drag-module-small" style="background-color: rgb(255, 255, 255); display:none">
               <tr>
@@ -324,21 +284,7 @@
                     <tr>
                       <td width="100%" height="30"></td>
                     </tr>
-                    <!----------------- Button Center ----------------->
-                    <tr>
-                      <td>
-                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
-                          <tr>
-                            <td align="center" height="45"bgcolor="#1dc8e9" style="padding-left: 22px; padding-right: 22px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); text-transform: uppercase; background-color: rgb(29, 200, 233);">
-                              <!--[if !mso]><!--><span style="font-family: 'proxima_novablack', Helvetica; font-weight: normal;"><!--<![endif]-->
-                                <a href="<%= url_for cliente_trabajo_confirmation_url(@cliente.id,@trabajo.id,@trabajo.confirmation_token) %>" style="color: rgb(255, 255, 255); font-size: 18px; text-decoration: none; line-height: 34px; width: 100%;">Confirmar</a>
-                              <!--[if !mso]><!--></span><!--<![endif]-->
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <!----------------- End Button Center ----------------->
+
                   </table>
 
                 </td>

@@ -260,4 +260,6 @@ end
 
 Rails.application.config.to_prepare do
   Devise::SessionsController.layout "devise"
+  Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "devise" }
+
 end

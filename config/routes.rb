@@ -7,7 +7,9 @@ Rails.application.routes.draw do
 
 
   resources :clientes do
-    resources :trabajos
+    resources :trabajos do
+      get "/confirm/:confirmation_token", to: :confirm, as: 'confirmation'
+    end
   end
 
   resources :users, :path => 'usuarios', only: [] do

@@ -20,6 +20,7 @@ class ClientesController < ApplicationController
   # GET /clientes/1
   # GET /clientes/1.json
   def show
+    @trabajos = Trabajo.where(:cliente_id => @cliente.id).paginate(:page => params[:page]).order('id DESC')
   end
 
   # GET /clientes/new
