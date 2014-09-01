@@ -84,4 +84,10 @@ Rails.application.routes.draw do
     get    "account" => "users/registrations#edit",   as: :edit_user_registration
   end
 
+  namespace :api, defaults: {format: :json} do
+    namespace :v1 do
+      get "/users/:email", to: 'users#show', :constraints => { :email => /[^\/]+/ }
+    end
+  end
+
 end
