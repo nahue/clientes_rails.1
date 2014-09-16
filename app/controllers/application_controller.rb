@@ -22,4 +22,11 @@ class ApplicationController < ActionController::Base
     authenticate_user!
   end
 
+  def sort_column
+    params[:sort] || "nombre"
+  end
+
+  def sort_direction
+    params[:direction] || "asc"
+  end
 end

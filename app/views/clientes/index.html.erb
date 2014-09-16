@@ -1,40 +1,40 @@
 <%- model_class = Cliente -%>
 <% content_for :header do %>
     <header class="header bg-info dker bg-gradient">
-        <div class="row m-l-none m-r-none">
-          <div class="col-sm-4">
-            <h3 class="m-t m-b-none">Clientes</h3>
-            <p class="block text-muted">Administre su clientela</p>
-          </div>
+      <div class="row m-l-none m-r-none">
+        <div class="col-sm-4">
+          <h3 class="m-t m-b-none">Clientes</h3>
+
+          <p class="block text-muted">Administre su clientela</p>
         </div>
+      </div>
     </header>
 <% end %>
 
-<div class="vbox">
-  <div class="scrollable wrapper">
-    <section class="panel">
-    <header class="panel-heading"> Clientes </header>
-    <div class="row wrapper">
-      <div class="col-sm-5">
-        <a href="<%= clientes_path %>.xls" class="btn btn-default">Exportar a Excel</a>
-        <a href="<%= clientes_path %>.csv" class="btn btn-default">Exportar a CSV</a>
-      </div>
+
+<section class="panel">
+  <header class="panel-heading"> Clientes</header>
+  <div class="row wrapper">
+    <div class="col-sm-5">
+      <a href="<%= clientes_path %>.xls" class="btn btn-default">Exportar a Excel</a>
+      <a href="<%= clientes_path %>.csv" class="btn btn-default">Exportar a CSV</a>
     </div>
+  </div>
 
 
-    <table class="table table-striped b-t text-sm">
-      <thead>
-        <tr>
-          <th><%= model_class.human_attribute_name(:empresa) %></th>
-          <th><%= model_class.human_attribute_name(:nombre) %></th>
-          <th><%= model_class.human_attribute_name(:apellido) %></th>
-          <th class="hidden-xs"><%= model_class.human_attribute_name(:email) %></th>
-          <th class="hidden-xs"><%= model_class.human_attribute_name(:otros_datos) %></th>
-          <th><%=t '.actions', :default => t("helpers.actions") %></th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @clientes.each do |cliente| %>
+  <table class="table table-striped b-t text-sm">
+    <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:empresa) %></th>
+      <th><%= model_class.human_attribute_name(:nombre) %></th>
+      <th><%= model_class.human_attribute_name(:apellido) %></th>
+      <th class="hidden-xs"><%= model_class.human_attribute_name(:email) %></th>
+      <th class="hidden-xs"><%= model_class.human_attribute_name(:otros_datos) %></th>
+      <th><%= t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @clientes.each do |cliente| %>
         <tr>
           <td><%= cliente.empresa %></td>
           <td><%= cliente.nombre %></td>
@@ -43,25 +43,23 @@
           <td class="hidden-xs"><%= cliente.otros_datos %></td>
           <td>
             <%= link_to edit_cliente_path(cliente), :class => 'btn btn-xs', :title => "#{ t('.show', :default => t('helpers.links.edit')) }" do %>
-              <%= glyph 'pencil' %>
+                <%= glyph 'pencil' %>
             <%- end -%>
             <%= link_to cliente_path(cliente), :class => 'btn btn-xs', :title => "Trabajos" do %>
                 <%= glyph 'th-list' %>
             <%- end -%>
-            <%= link_to cliente_path(cliente), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
-            <%= glyph 'remove' %>
+            <%= link_to cliente_path(cliente), :method => :delete, :data => {:confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?'))}, :class => 'btn btn-xs', :title => "#{ t('.destroy', :default => t('helpers.links.destroy')) }" do %>
+                <%= glyph 'remove' %>
             <%- end -%>
           </td>
         </tr>
-        <% end %>
-      </tbody>
-    </table>
+    <% end %>
+    </tbody>
+  </table>
 
-    <footer class="panel-footer">
-      <%= link_to t('.new', :default => t("helpers.links.new")),
-      new_cliente_path,
-      :class => 'btn btn-info' %>
-    </footer>
-  </section>
-</div>
-</div>
+  <footer class="panel-footer">
+    <%= link_to t('.new', :default => t("helpers.links.new")),
+                new_cliente_path,
+                :class => 'btn btn-info' %>
+  </footer>
+</section>

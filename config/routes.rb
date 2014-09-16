@@ -2,15 +2,18 @@ Rails.application.routes.draw do
 
   resources :preferencias
 
+
+  get "/trabajos", to: "trabajos#todos", as: "trabajos"
+
   resources :tipo_trabajos
-
-
 
   resources :clientes do
     resources :trabajos do
       get "/confirm/:confirmation_token", to: :confirm, as: 'confirmation'
     end
   end
+
+
 
   resources :users, :path => 'usuarios', only: [] do
     resource :preferencia

@@ -19,6 +19,7 @@ gem 'therubyracer',  platforms: :ruby
 gem 'rails-i18n'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-migrate-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -51,7 +52,7 @@ gem 'rails_config'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'bootstrap-sass-extras'
-
+gem 'bootstrap-generators', '~> 3.1.1'
 
 
 group :development do
@@ -75,3 +76,4 @@ gem 'newrelic_rpm'
 gem "paperclip", "~> 4.1"
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
+gem "simple-navigation"

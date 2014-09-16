@@ -12,7 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require plugins/jquery-ui/jquery-ui-1.10.3.custom
 //= require turbolinks
 //= require bootstrap
-
-//= require_tree .
+//= require plugins/bootstrap-hover-dropdown
+//= require plugins/jquery.slimscroll
+//= require plugins/jquery.blockui.min
+//= require plugins/jquery.cokie.min
+//= require plugins/jquery.uniform
+//= require plugins/bootstrap-switch
+//= require metronic/metronic
+//= require metronic/layout
+//= require metronic/demo

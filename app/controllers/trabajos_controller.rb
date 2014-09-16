@@ -2,6 +2,12 @@ class TrabajosController < ApplicationController
   before_action :set_trabajo, only: [:show, :edit, :update, :destroy]
   before_action :set_cliente, only: [:new, :edit, :index, :show, :create, :update, :destroy]
   before_action :require_user_signed_in, except: :confirm
+  helper_method :sort_column, :sort_direction
+
+  def todos
+    @trabajos = Trabajo.joins(:cliente).paginate(:page => params[:page],:per_page => 30).order(sort_column + ' ' + sort_direction)
+  end
+
   # GET /trabajos
   # GET /trabajos.json
   def index
@@ -95,4 +101,6 @@ class TrabajosController < ApplicationController
     def trabajo_params
       params.require(:trabajo).permit(:cliente_id, :descripcion, :tipo_trabajo_id, :fecha, :valor)
     end
+
+
 end
